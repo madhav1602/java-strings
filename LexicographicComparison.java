@@ -11,7 +11,7 @@ public class LexicographicComparison {
         System.out.println("Enter second string:");
         String str2 = sc.nextLine();
         
-        sc.close();
+        
 
         // Compare strings and print result
         int result = compareStrings(str1, str2);
@@ -31,7 +31,7 @@ public class LexicographicComparison {
         // Compare characters one by one
         for (int i = 0; i < minLen; i++) {
             if (s1.charAt(i) != s2.charAt(i)) {
-                return s1.charAt(i) - s2.charAt(i); // Return ASCII difference
+                return s1.charAt(i) - s2.charAt(i); 
             }
         }
 
